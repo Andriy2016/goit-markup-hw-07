@@ -907,7 +907,16 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-    
+    .footer_box {
+        flex-wrap: nowrap;
+    }
+    .footer_informations {
+        /* width: 264px; */
+        margin-right: 120px;
+    }
+    .footer_link {
+        margin-right: 80px;
+    }
 }
 
 /* Portfolio */
