@@ -106,7 +106,10 @@ body {
 .header {
     color: var(--accent-cl);
     border-bottom: 1px solid var(--accent-cl);
+    /* max-width: 428px;
+    width: 100%; */
 }
+
 
 .header_container {
     display: flex;
@@ -1278,7 +1281,8 @@ label {
     max-width: 396px;
     margin-left: auto;
     margin-right: auto;
-    
+    width: 100%;
+
     padding-left: 15px;
     padding-right: 15px;
     /*
@@ -1295,12 +1299,14 @@ label {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 736px;
+        width: 100%;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .container {
-        max-width: 1200px;
+        max-width: 1128px;
+        width: 100%;
     }
 }
 
