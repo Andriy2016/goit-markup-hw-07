@@ -233,10 +233,10 @@ body {
     opacity: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-clip: padding-box;
 
-    max-width: 1440;
+    max-width: 428px;
     margin-left: auto;
     margin-right: auto;
     
@@ -247,18 +247,21 @@ body {
   (min-resolution: 2dppx) {
   .hero_sct {
     background-image: url("../images/mainpage/main_hero/dark-bg_mob@2x.png") , url("../images/mainpage/main_hero/people-bg_mob@2x.png");
+    max-width: 428px;
   }
 }
 
 @media screen and (min-width: 768px) {
     .hero_sct {
         background-image: url("../images/mainpage/main_hero/dark-bg_tab@1x.png") , url("../images/mainpage/main_hero/people-bg_tab@1x.png");
+        max-width: 768px;
     }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero_sct {
         background-image: url("../images/mainpage/main_hero/dark-bg_tab@2x.png") , url("../images/mainpage/main_hero/people-bg_tab@2x.png");
+        max-width: 768px;
         }
     }
 }
@@ -266,12 +269,14 @@ body {
 @media screen and (min-width: 1200px) {
     .hero_sct {
         background-image: url("../images/mainpage/main_hero/dark-bg_desk@1x.png") , url("../images/mainpage/main_hero/people-bg_desk@1x.png");
+        max-width: 1440px;
     }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero_sct {
         background-image: url("../images/mainpage/main_hero/dark-bg_desk@2x.png") , url("../images/mainpage/main_hero/people-bg_desk@2x.png");
+        max-width: 1440px;
         }
     }
 }
