@@ -106,7 +106,6 @@ body {
 .header {
     color: var(--accent-cl);
     border-bottom: 1px solid var(--accent-cl);
-    width: auto;
 }
 
 .header_container {
@@ -234,15 +233,13 @@ body {
     opacity: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-clip: padding-box; 
-    max-width: 429px;
-    max-height: 432px;
+    background-size: cover;
+    background-clip: padding-box;
+
+    max-width: 1440;
     margin-left: auto;
     margin-right: auto;
     
-    
-
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -256,16 +253,12 @@ body {
 @media screen and (min-width: 768px) {
     .hero_sct {
         background-image: url("../images/mainpage/main_hero/dark-bg_tab@1x.png") , url("../images/mainpage/main_hero/people-bg_tab@1x.png");
-        max-width: 768px;
-        max-height: 436px;
     }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero_sct {
         background-image: url("../images/mainpage/main_hero/dark-bg_tab@2x.png") , url("../images/mainpage/main_hero/people-bg_tab@2x.png");
-        max-width: 768px;
-        max-height: 436px;
         }
     }
 }
@@ -273,16 +266,12 @@ body {
 @media screen and (min-width: 1200px) {
     .hero_sct {
         background-image: url("../images/mainpage/main_hero/dark-bg_desk@1x.png") , url("../images/mainpage/main_hero/people-bg_desk@1x.png");
-        max-width: 1200px;
-        max-height: 600px;
     }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .hero_sct {
         background-image: url("../images/mainpage/main_hero/dark-bg_desk@2x.png") , url("../images/mainpage/main_hero/people-bg_desk@2x.png");
-        max-width: 1200px;
-        max-height: 600px;
         }
     }
 }
@@ -390,7 +379,7 @@ body {
     flex-wrap: wrap;
     gap: 72px;
     justify-content: center;
-    width: auto;
+
     /*align-items: center;
     gap: 24px; 
 
@@ -1209,7 +1198,7 @@ label {
 }
 
 .modal_form_agreement {
-    display: flex;  
+    display: flex;
     align-items: center;
     gap: 8px;
 
@@ -1281,11 +1270,10 @@ label {
 
 .container {
     min-width: 320px;
-    max-width: 428px;
+    max-width: 396px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    
     /*
     width: 1158px;
     padding-left: 15px;
@@ -1306,6 +1294,8 @@ label {
 @media screen and (min-width: 1200px) {
     .container {
         max-width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -1323,6 +1313,7 @@ label {
     left: 0;
     width: 100vw;
     height: 100vh;
+    padding: auto;
     
     background-color: var(--white-cl);
     z-index: 999;
