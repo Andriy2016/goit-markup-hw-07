@@ -1318,7 +1318,6 @@ label {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: auto;
     
     background-color: var(--white-cl);
     z-index: 999;
