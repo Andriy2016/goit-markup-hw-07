@@ -1053,7 +1053,8 @@ body {
 
 .backdrop {
     position: fixed;
-
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
@@ -1077,11 +1078,13 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
     transform: translate(-50%, -50%);
-
+    max-width: 392px;
+    min-width: 320px;
+    min-height: 586px;
     padding: 72px 24px 24px 24px;
-    width: 408px;
-    min-height: 576px;
+    
     border-radius: 4px;
     background-color: var(--light-cl);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1332,12 +1335,12 @@ label {
     left: 0;
     width: 100vw;
     height: 100vh;
-    
+    padding: 80px 35px 40px 40px;
     background-color: var(--white-cl);
     z-index: 999;
   
     transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
+    transition: transform var(--trns);
   }
   
   .menu-container.is-open {
@@ -1362,7 +1365,8 @@ label {
     text-decoration: none;
     display: flex;
     flex-direction: column;
-    gap: 40px; 
+    row-gap: calc((100vh - 344px) * 0.09);
+    padding-bottom: calc((100vh - 344px) * 0.48); 
   }
 
   .link_form {
@@ -1381,10 +1385,11 @@ label {
 
 
 .menu_address {
+    
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    margin-bottom: 48px; 
+    row-gap: calc((100vh - 344px) * 0.09);
+    padding-bottom: calc((100vh - 344px) * 0.11);
 }
 
 .menu_item {
@@ -1407,12 +1412,15 @@ label {
     gap: calc((100% - 4 * 40px) / 4);
 }
 
-.mobile-menu {
-    margin-top: 80px;
-    margin-left: 40px;
+
+.manu_contacts_color {
+    color: var(--pressed-state-cl);
 }
 
-.menu_box_link { 
-    margin-left: 40px;
-    margin-top: 184px;
+.menu_tell {
+    font-size: 36px;
+    line-height: 1.3;
+    text-align: left;   
+    text-transform: capitalize;
+    color: var(--primary-brand-cl);
 }
