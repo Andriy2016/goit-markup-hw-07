@@ -52,6 +52,7 @@ body {
 }
 
 
+
 .current::after {
     content: '';
     position: absolute;
@@ -233,7 +234,17 @@ body {
 
 .hero_sct{
     background-image: url("../images/mainpage/main_hero/dark-bg_mob@1x.png") , url("../images/mainpage/main_hero/people-bg_mob@1x.png");
-    opacity: 100%;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    text-align: center;
+
+    background-size: cover;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* opacity: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -241,7 +252,7 @@ body {
 
     max-width: 428px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
     
 }
 
@@ -284,10 +295,6 @@ body {
     }
 }
 
-.hero_sct_centr {
-    padding: 112px 0;
-    /* padding: 188px 0; */
-}
 
 .hero_sct_title {
     margin-left: auto;
@@ -612,7 +619,8 @@ body {
     flex-wrap: wrap;
     gap: 72px;
     column-gap: 16px;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
     /*
     display: flex;
     justify-content: center;
@@ -1344,8 +1352,10 @@ label {
   }
   
   .mobile-menu {
+    
     padding: 0;
-    list-style: none;
+    text-decoration: none;
+    list-style-type: none;
   }
   
   .mobile-menu {
